@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2E23E6AA28AB469600EB6377 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23E6A928AB469600EB6377 /* ActivityView.swift */; };
 		2E23E6AC28AB5A4500EB6377 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23E6AB28AB5A4500EB6377 /* RestaurantDetailView.swift */; };
+		2E2E6EFA28BDC2FA00F02284 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E6EF928BDC2FA00F02284 /* ColorExtension.swift */; };
+		2E2E6EFF28BDCA8C00F02284 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E6EFE28BDCA8C00F02284 /* MapView.swift */; };
 		2E7352E728583BC1007ACB21 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7352E628583BC1007ACB21 /* Restaurant.swift */; };
 		2ED503E62847169A004F5AE7 /* FoodPinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED503E52847169A004F5AE7 /* FoodPinApp.swift */; };
 		2ED503E82847169A004F5AE7 /* RestaurantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED503E72847169A004F5AE7 /* RestaurantListView.swift */; };
@@ -19,12 +21,17 @@
 /* Begin PBXFileReference section */
 		2E23E6A928AB469600EB6377 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		2E23E6AB28AB5A4500EB6377 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		2E2E6EF928BDC2FA00F02284 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		2E2E6EFE28BDCA8C00F02284 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2E7352E628583BC1007ACB21 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		2ED503E22847169A004F5AE7 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED503E52847169A004F5AE7 /* FoodPinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPinApp.swift; sourceTree = "<group>"; };
 		2ED503E72847169A004F5AE7 /* RestaurantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
 		2ED503E92847169B004F5AE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ED503EC2847169B004F5AE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2EFBE56A28B5E71700D302BE /* Fuente.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fuente.ttf; sourceTree = "<group>"; };
+		2EFBE56B28B5E71700D302BE /* FuenteWeight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuenteWeight.ttf; sourceTree = "<group>"; };
+		2EFBE56C28B5E77900D302BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,12 +45,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E2E6EF828BDC2E200F02284 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2E2E6EF928BDC2FA00F02284 /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		2E7352E828584172007ACB21 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				2ED503E72847169A004F5AE7 /* RestaurantListView.swift */,
 				2E23E6A928AB469600EB6377 /* ActivityView.swift */,
 				2E23E6AB28AB5A4500EB6377 /* RestaurantDetailView.swift */,
+				2E2E6EFE28BDCA8C00F02284 /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -59,6 +75,7 @@
 		2ED503D92847169A004F5AE7 = {
 			isa = PBXGroup;
 			children = (
+				2E2E6EF828BDC2E200F02284 /* Extension */,
 				2ED503E42847169A004F5AE7 /* FoodPin */,
 				2ED503E32847169A004F5AE7 /* Products */,
 			);
@@ -75,6 +92,8 @@
 		2ED503E42847169A004F5AE7 /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				2EFBE56C28B5E77900D302BE /* Info.plist */,
+				2EFBE56928B5E6E300D302BE /* Resorces */,
 				2E7352E928584190007ACB21 /* Model */,
 				2E7352E828584172007ACB21 /* View */,
 				2ED503E52847169A004F5AE7 /* FoodPinApp.swift */,
@@ -90,6 +109,15 @@
 				2ED503EC2847169B004F5AE7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2EFBE56928B5E6E300D302BE /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
+				2EFBE56A28B5E71700D302BE /* Fuente.ttf */,
+				2EFBE56B28B5E71700D302BE /* FuenteWeight.ttf */,
+			);
+			path = Resorces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E2E6EFF28BDCA8C00F02284 /* MapView.swift in Sources */,
 				2ED503E82847169A004F5AE7 /* RestaurantListView.swift in Sources */,
 				2E23E6AC28AB5A4500EB6377 /* RestaurantDetailView.swift in Sources */,
 				2E23E6AA28AB469600EB6377 /* ActivityView.swift in Sources */,
+				2E2E6EFA28BDC2FA00F02284 /* ColorExtension.swift in Sources */,
 				2ED503E62847169A004F5AE7 /* FoodPinApp.swift in Sources */,
 				2E7352E728583BC1007ACB21 /* Restaurant.swift in Sources */,
 			);
@@ -298,6 +328,8 @@
 				DEVELOPMENT_TEAM = 789V3BEY84;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodPin/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,6 +359,8 @@
 				DEVELOPMENT_TEAM = 789V3BEY84;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodPin/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

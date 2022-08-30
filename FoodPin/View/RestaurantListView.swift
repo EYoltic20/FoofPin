@@ -12,27 +12,27 @@ struct RestaurantListView: View {
     @State var restaurantIsFavorites = Array(repeating: false, count: 21)
     @State var restaurants = [
         Restaurant(name: "Cafe Deadend", type: "Coffee & Tea Shop", location:
-                    "Hong Kong", image: "Cafe Deadend", isFavorite: false),
+                    "Hong Kong", image: "Cafe Deadend", isFavorite: false,description: "kkkk"),
         Restaurant(name: "Homei", type: "Cafe", location: "Hong Kong", image:
-                    "Homei", isFavorite: false),
-        Restaurant(name: "Teakha", type: "Tea House", location: "Hong Kong", image: "Teakha", isFavorite: false),
-        Restaurant(name: "Cafe loisl", type: "Austrian / Causual Drink", location: "Hong Kong", image: "Cafe Loisl", isFavorite: false),Restaurant(name: "Petite Oyster", type: "French",location: "Hong Kong", image: "Petite Oyster", isFavorite: false),
-        Restaurant(name: "For Kee Restaurant", type: "Bakery", location: "HongKong", image: "For Kee Restaurant", isFavorite: false),
-        Restaurant(name: "Po's Atelier", type: "Bakery", location: "Hong Kong", image: "Po's Atelier", isFavorite: false),
-        Restaurant(name: "Bourke Street Backery", type: "Chocolate", location:"Sydney", image: "Bourke Street Bakery", isFavorite: false),
-        Restaurant(name: "Haigh's Chocolate", type: "Cafe", location: "Sydney", image: "Haigh's Chocolate", isFavorite: false),
-        Restaurant(name: "Palomino Espresso", type: "American / Seafood", location: "Sydney", image: "Palomino Espresso", isFavorite: false),
-        Restaurant(name: "Upstate", type: "American", location: "New York", image: "Upstate", isFavorite: false),
-        Restaurant(name: "Traif", type: "American", location: "New York", image: "Traif", isFavorite: false),
-        Restaurant(name: "Graham Avenue Meats", type: "Breakfast & Brunch", location: "New York", image: "Graham Avenue Meats And Deli", isFavorite: false),
-        Restaurant(name: "Waffle & Wolf", type: "Coffee & Tea", location: "NewYork", image: "Waffle & Wolf", isFavorite: false),
-        Restaurant(name: "Five Leaves", type: "Coffee & Tea", location: "New York", image: "Five Leaves", isFavorite: false),
-        Restaurant(name: "Cafe Lore", type: "Latin American", location: "New York", image: "Cafe Lore", isFavorite: false),
-        Restaurant(name: "Confessional", type: "Spanish", location: "New York", image: "Confessional", isFavorite: false),
-        Restaurant(name: "Barrafina", type: "Spanish", location: "London", image: "Barrafina", isFavorite: false),
-        Restaurant(name: "Donostia", type: "Spanish", location: "London", image: "Donostia", isFavorite: false),
-        Restaurant(name: "Royal Oak", type: "British", location: "London", image: "Royal Oak", isFavorite: false),
-        Restaurant(name: "CASK Pub and Kitchen", type: "Thai", location: "London", image: "CASK Pub and Kitchen", isFavorite: false)]
+                    "Homei", isFavorite: false,description: "k"),
+        Restaurant(name: "Teakha", type: "Tea House", location: "Hong Kong", image: "Teakha", isFavorite: false,description: ""),
+        Restaurant(name: "Cafe loisl", type: "Austrian / Causual Drink", location: "Hong Kong", image: "Cafe Loisl", isFavorite: false,description: ""),Restaurant(name: "Petite Oyster", type: "French",location: "Hong Kong", image: "Petite Oyster", isFavorite: false,description: ""),
+        Restaurant(name: "For Kee Restaurant", type: "Bakery", location: "HongKong", image: "For Kee Restaurant", isFavorite: false,description: ""),
+        Restaurant(name: "Po's Atelier", type: "Bakery", location: "Hong Kong", image: "Po's Atelier", isFavorite: false,description: ""),
+        Restaurant(name: "Bourke Street Backery", type: "Chocolate", location:"Sydney", image: "Bourke Street Bakery", isFavorite: false,description: ""),
+        Restaurant(name: "Haigh's Chocolate", type: "Cafe", location: "Sydney", image: "Haigh's Chocolate", isFavorite: false,description: ""),
+        Restaurant(name: "Palomino Espresso", type: "American / Seafood", location: "Sydney", image: "Palomino Espresso", isFavorite: false,description: ""),
+        Restaurant(name: "Upstate", type: "American", location: "New York", image: "Upstate", isFavorite: false,description: ""),
+        Restaurant(name: "Traif", type: "American", location: "New York", image: "Traif", isFavorite: false,description: ""),
+        Restaurant(name: "Graham Avenue Meats", type: "Breakfast & Brunch", location: "New York", image: "Graham Avenue Meats And Deli", isFavorite: false,description: ""),
+        Restaurant(name: "Waffle & Wolf", type: "Coffee & Tea", location: "NewYork", image: "Waffle & Wolf", isFavorite: false,description: ""),
+        Restaurant(name: "Five Leaves", type: "Coffee & Tea", location: "New York", image: "Five Leaves", isFavorite: false,description: ""),
+        Restaurant(name: "Cafe Lore", type: "Latin American", location: "New York", image: "Cafe Lore", isFavorite: false,description: ""),
+        Restaurant(name: "Confessional", type: "Spanish", location: "New York", image: "Confessional", isFavorite: false,description: ""),
+        Restaurant(name: "Barrafina", type: "Spanish", location: "London", image: "Barrafina", isFavorite: false,description: ""),
+        Restaurant(name: "Donostia", type: "Spanish", location: "London", image: "Donostia", isFavorite: false,description: ""),
+        Restaurant(name: "Royal Oak", type: "British", location: "London", image: "Royal Oak", isFavorite: false,description: ""),
+        Restaurant(name: "CASK Pub and Kitchen", type: "Thai", location: "London", image: "CASK Pub and Kitchen", isFavorite: false,description: "")]
     
     
     // MARK : - List

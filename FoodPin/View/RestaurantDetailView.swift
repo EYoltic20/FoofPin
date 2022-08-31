@@ -12,6 +12,8 @@ struct RestaurantDetailView: View {
     @Environment(\.dismiss) var dismiss // valur for dismissing the current value
     
     var restauarant : Restaurant
+    
+    @State private var showReview = false
     @State var itIsFav = false
     var body: some View {
         ScrollView{
@@ -51,11 +53,32 @@ struct RestaurantDetailView: View {
                     }
                 
             }
-            ZStack{
+            VStack{
                 Text(restauarant.description)
                     .foregroundColor(.blue)
                     .padding()
-                MapView()
+                NavigationLink(destination: MapView(location:restauarant.location)
+                    .edgesIgnoringSafeArea(.all)){
+                MapView(location: restauarant.location)
+                    .frame(minWidth:0 , maxWidth: .infinity)
+                    .frame(height:200)
+                    .cornerRadius(20)
+                    .padding()
+                }
+                Button(action:{
+                    self.showReview.toggle()
+                }){
+                    Text("Rate it ")
+                        .foregroundColor(.black)
+                        .font(.system(.headline, design: .rounded))
+                        .frame(minWidth:0,maxWidth: .infinity)
+                }
+//                .tint(Color(CGColor()))
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.roundedRectangle(radius: 25))
+                .controlSize(.large)
+                .padding(.horizontal)
+                .padding(.top,40)
                 
             }
             
